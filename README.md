@@ -42,3 +42,218 @@ y podrás ver como comienza este archivo a hacer pull a la imagen de postgres y 
 # Pruebas y Utilizacion del servicio
 
 esto al igual que todo lo demás en el proyecto puedes usar tu herramienta de preferencia yo usare **Postman** que es la herramienta que normalmente uso desde hace mucho tiempo pero hay otras herramientas increíbles en el mercado como **insomnia** o incluso hay extensiones de visual estudio code para estas pruebas.
+
+te dejo la query de la creacion de la tabla por motivos informativos 
+```SQL
+create table monitore_variables_electricas
+( id int NOT NULL,
+ variables numeric ,
+ lastinsert timestamp)
+```
+# BODYREQUEST
+**INSERTAR**
+```json
+{
+    "option":"insertar",
+    "rows": [
+          {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 02:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 03:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 04:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 05:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 06:00:00",
+                    "value": 22.051237
+                },
+                 {
+                    "meter_date": "2022-10-24 11:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 12:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 01:00:00",
+                    "value": 22.051237
+                },
+                             {
+                    "meter_date": "2022-10-25 02:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 03:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 04:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 05:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 06:00:00",
+                    "value": 22.051237
+                },
+                 {
+                    "meter_date": "2022-10-25 11:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 11:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 13:00:00",
+                    "value": 22.051237
+                },
+                             {
+                    "meter_date": "2022-10-25 14:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 15:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-25 01:00:00",
+                    "value": 22.051237
+                },
+                 {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                             {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                 {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                }, {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                             {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                },
+                 {
+                    "meter_date": "2022-10-24 01:00:00",
+                    "value": 22.051237
+                }
+         
+            ]
+}
+```
+**PRUEBA**
+```JSON
+{"option":"prueba",}
+```
+**ELIMINAR**
+```json
+{
+    "option":"eliminacion",
+    "Id": 2
+}
+```
+**DAILY**
+```json
+{
+    "option":"daily",
+    "fechaI":"2022-10-24"
+}
+```
+**monthly**
+```json
+{
+    "option":"monthly",
+    "fechaI":"10"
+}
+```
+**BUSQUEDA DETALLADA**
+```json
+{
+    "option":"busquedatiempo",
+    "fechaI":"2022-10-24",
+    "FechaF":"2022-10-30"
+}
+```
+
